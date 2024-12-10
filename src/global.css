@@ -1,0 +1,385 @@
+/* Reset Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background: linear-gradient(to right, #e3f2fd, #ffffff);
+  color: #333;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+/*Home*/
+/* Home container */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+  /* Full viewport height */
+  background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+  color: #333;
+  padding: 2rem;
+}
+
+/* Heading */
+.home-container h1 {
+  font-size: 3rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Subheading */
+.home-container p {
+  font-size: 1.5rem;
+  color: #555;
+  margin-bottom: 1rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Add subtle animations */
+.home-container h1,
+.home-container p {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*About*/
+/* General container for all sections */
+.about-section,
+.mission-section,
+.team-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 400px;
+  /* Full viewport height */
+  background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+  color: #333;
+  padding: 2rem;
+}
+
+/* Shared styles for headings */
+.about-section h1,
+.mission-section h2,
+.team-section h2 {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Shared styles for paragraphs */
+.about-section p,
+.mission-section p,
+.team-section p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+/* Specific nested content for AboutParent */
+.nested-content {
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Add fade-in animation for all sections */
+.about-section,
+.mission-section,
+.team-section {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/* Center Content */
+.container {
+  text-align: center;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+h1,
+h2 {
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* Glassmorphism Card */
+.glass-card {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 1.5rem auto;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.glass-card h1,
+.glass-card h2 {
+  margin-bottom: 1rem;
+  color: #007bff;
+}
+
+.glass-card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #333;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+form button {
+  padding: 0.8rem;
+  font-size: 1rem;
+  color: #fff;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+/* Buttons */
+button {
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  color: #fff;
+  background: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Weather Grid */
+.weather-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.weather-card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.weather-card:hover {
+  transform: translateY(-5px);
+}
+
+.weather-card h3 {
+  margin-bottom: 0.5rem;
+  color: #007bff;
+}
+
+.weather-card p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/*about section/
+/* Container styling */
+.about-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+/* Heading and paragraph */
+.about-container h1 {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.about-container p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+/* Navigation styling */
+.about-nav {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.dropdown-button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropdown-button:hover {
+  background-color: #0056b3;
+}
+
+/* Dropdown menu */
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  width: 200px;
+  margin-top: 0.5rem;
+  z-index: 1000;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 0.8rem 1rem;
+  text-align: center;
+  color: #007bff;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dropdown-menu a:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  color: #0056b3;
+}
+
+/* Content area for Outlet */
+.about-content {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .glass-card {
+    width: 90%;
+    margin: 1rem auto;
+  }
+
+  form {
+    width: 90%;
+  }
+
+  .weather-grid {
+    grid-template-columns: 1fr;
+  }
+}

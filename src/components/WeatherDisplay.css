@@ -1,0 +1,52 @@
+/* Weather container */
+.weather-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 60vh;
+    background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Weather title */
+.weather-title {
+    font-size: 2.5rem;
+    color: #007bff;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Weather info */
+.weather-info {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+/* Placeholder and loading states */
+.weather-loading,
+.weather-error,
+.weather-placeholder {
+    font-size: 1.2rem;
+    color: #555;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Smooth animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

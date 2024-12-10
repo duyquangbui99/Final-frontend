@@ -1,0 +1,77 @@
+/* ReduxExample container */
+.redux-example {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+    color: #333;
+    padding: 2rem;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Heading */
+.redux-example h1 {
+    font-size: 3rem;
+    color: #007bff;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    animation: slideDown 1.5s ease;
+}
+
+/* CounterComponent buttons */
+.counter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    /* Adds spacing between buttons */
+    margin-top: 1rem;
+    /* Adds gap between the buttons and any content above */
+}
+
+.counter-buttons button {
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.counter-buttons button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.counter-buttons button:active {
+    transform: scale(0.95);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
