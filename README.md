@@ -1,58 +1,72 @@
-# Simple Weather App
+# Final - Quang Bui
 
-A simple weather application built with React to display real-time weather data using the OpenWeatherMap API. This project demonstrates the use of:
-- Context API for state management.
-- Fetching data from an external API.
-- Styling using inline styles, CSS Modules, and styled-components.
+## Overview
+WeatherApp is a React-based web application that demonstrates key features of modern web development. The app includes dynamic routing, global state management using Redux, API integration for fetching weather data, form validation, and a light/dark theme toggle feature. This project is designed to meet the requirements of the **CSCI 6333 Final Assignment**.
 
----
 
-## **Overview**
-
-The Simple Weather App allows users to search for the current weather in any city. It handles errors gracefully, such as invalid city names, and provides loading indicators for a seamless user experience.
-<img width="710" alt="Screenshot 2024-12-01 at 2 39 33 PM" src="https://github.com/user-attachments/assets/3ae96f91-2f4a-4608-b33f-37520e10ffaf">
-<img width="709" alt="Screenshot 2024-12-01 at 2 39 48 PM" src="https://github.com/user-attachments/assets/2884107a-b04c-4b2c-a261-a12e1f8efcdb">
-<img width="708" alt="Screenshot 2024-12-01 at 2 40 03 PM" src="https://github.com/user-attachments/assets/db991ccd-b44a-4dbe-bc8c-e6cef25a47ff">
+<img width="793" alt="0" src="https://github.com/user-attachments/assets/f72a0ebd-b5ad-4def-86dc-e19ee945ce8d">
+<img width="791" alt="1" src="https://github.com/user-attachments/assets/b1124533-39d3-4d2c-88b5-b76ea7132e43">
+<img width="745" alt="2" src="https://github.com/user-attachments/assets/7a95a40e-8d41-48e7-ae15-48cb8e718dd7">
+<img width="784" alt="3" src="https://github.com/user-attachments/assets/1068d94d-bd11-4fc6-bbc7-7f49ad3109e6">
+<img width="782" alt="4" src="https://github.com/user-attachments/assets/7c14f9f5-96a6-44fb-ad9e-ca2633c65f5b">
 
 ---
 
-## **Features**
-1. **Context API for State Management**:
-   - Shares weather data, loading state, and error state across components.
+## Features
 
-2. **Fetching Weather Data**:
-   - Retrieves weather information from OpenWeatherMap API.
-   - Handles loading and error states effectively.
+### Part 01: React Router Implementation
+- Implemented navigation with React Router to handle routing between five pages:
+  1. **Home**: Displays a welcome message.
+  2. **About**: Provides an overview of the app, with nested routes for:
+     - **Team**: Information about the team behind the app.
+     - **Mission**: Details about the app's mission.
+  3. **Contact**: A page with a controlled form.
+  4. **Redux Example**: Demonstrates Redux state management with a counter example.
+  5. **Weather App**: Fetches and displays weather data from the OpenWeatherMap API.
+- Added navigation links in the navbar for easy access to each page.
+- Utilized nested routes for `About`, including `Team` and `Mission`.
+  
+<img width="558" alt="Screenshot 2024-12-10 at 1 05 23 PM" src="https://github.com/user-attachments/assets/d9aac0c2-bcac-413b-8495-dece6aaf896a">
 
-3. **Styling in React**:
-   - **Inline styles**: Used for the application header.
-   - **CSS Modules**: Used for the weather display component.
-   - **Styled-components**: Used for the search bar.
+### Part 02: Global State Management with Redux
+- Created a Redux store to manage a **Counter** state.
+- Actions implemented: **Increment**, **Decrement**, and **Reset**.
+- Built a `CounterComponent` to display the counter value and buttons.
+- Used React-Redux hooks (`useSelector` and `useDispatch`) to connect components to the Redux store.
 
-4. **Error Handling**:
-   - Displays an error message if the city is not found.
+### Part 03: Fetch and Display Data
+- Implemented `WeatherContext` to share weather data and loading/error states across components.
+- Used the OpenWeatherMap API to fetch weather data dynamically based on user input.
+- Handled loading and error states during API requests to ensure a smooth user experience.
+- Styled components:
+  - Used **CSS Modules** for the `WeatherDisplay` component.
+  - Styled the search bar using **styled-components**.
 
-5. **Responsive Design**:
-   - Ensures the app looks good on various devices and screen sizes.
+### Part 04: Context API for Global Theme Management
+- Created a `ThemeContext` to manage light and dark modes globally.
+- Added a **Theme Toggle Button** in the navbar for switching between themes.
+- Dynamically applied light or dark styles to components based on the current theme.
+
+### Part 05: Form Handling with Validation
+- Developed a controlled form on the **Contact** page with the following fields:
+  1. **Name**: Required field with validation.
+  2. **Email**: Required field with email format validation.
+  3. **Message**: Optional field.
+- Displayed error messages for invalid form submissions.
+- Logged form data to the console upon valid submission and reset the form afterward.
+
 ---
 
-## **API key**
-- In SearchBar.js file:
-   - Replace the placeholder API key with your own API key:
-  ```bash
-  const API_KEY = 'your_api_key_here';
-
-     
+## Dependencies
+- **React**: Framework for building the user interface.
+- **React Router**: For handling dynamic routing.
+- **Redux**: State management for the counter example.
+- **React-Redux**: To connect Redux with React components.
+- **Axios**: To fetch data from the OpenWeatherMap API.
+- **styled-components**: For styling the search bar.
+- **CSS Modules**: To style the weather display component.
+- **OpenWeatherMap API**: For fetching real-time weather data.
 
 ---
 
-## **Dependencies**
 
-Before running the app, make sure you have the following dependencies installed:
-
-- `react`
-- `styled-components`
-
-To install the dependencies, run:
-```bash
-npm install styled-components
