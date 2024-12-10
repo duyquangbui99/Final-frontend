@@ -33,6 +33,8 @@ WeatherApp is a React-based web application that demonstrates key features of mo
 - Actions implemented: **Increment**, **Decrement**, and **Reset**.
 - Built a `CounterComponent` to display the counter value and buttons.
 - Used React-Redux hooks (`useSelector` and `useDispatch`) to connect components to the Redux store.
+  
+<img width="849" alt="Screenshot 2024-12-10 at 1 20 45 PM" src="https://github.com/user-attachments/assets/33554995-486d-4f25-9b17-ce916dc64ef4">
 
 ### Part 03: Fetch and Display Data
 - Implemented `WeatherContext` to share weather data and loading/error states across components.
