@@ -43,10 +43,11 @@ WeatherApp is a React-based web application that demonstrates key features of mo
   - Styled the search bar using **styled-components**.
 <img width="841" alt="Screenshot 2024-12-10 at 1 12 04 PM" src="https://github.com/user-attachments/assets/69525990-ac74-4808-bfe9-ee0026de10cd">
 
-### Part 04: Context API for Global Theme Management
+### Part 04: Global Theme Management
 - Created a `ThemeContext` to manage light and dark modes globally.
 - Added a **Theme Toggle Button** in the navbar for switching between themes.
 - Dynamically applied light or dark styles to components based on the current theme.
+<img width="732" alt="Screenshot 2024-12-10 at 1 13 26 PM" src="https://github.com/user-attachments/assets/8f615a41-f735-49a3-8783-d8f8cad20e18">
 
 ### Part 05: Form Handling with Validation
 - Developed a controlled form on the **Contact** page with the following fields:
@@ -55,6 +56,7 @@ WeatherApp is a React-based web application that demonstrates key features of mo
   3. **Message**: Optional field.
 - Displayed error messages for invalid form submissions.
 - Logged form data to the console upon valid submission and reset the form afterward.
+<img width="643" alt="Screenshot 2024-12-10 at 1 14 52 PM" src="https://github.com/user-attachments/assets/4b482b98-68b6-45f0-a12c-c1d21eda2d04">
 
 ---
 
