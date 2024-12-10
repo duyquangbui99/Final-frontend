@@ -41,6 +41,7 @@ WeatherApp is a React-based web application that demonstrates key features of mo
 - Styled components:
   - Used **CSS Modules** for the `WeatherDisplay` component.
   - Styled the search bar using **styled-components**.
+<img width="841" alt="Screenshot 2024-12-10 at 1 12 04 PM" src="https://github.com/user-attachments/assets/69525990-ac74-4808-bfe9-ee0026de10cd">
 
 ### Part 04: Context API for Global Theme Management
 - Created a `ThemeContext` to manage light and dark modes globally.
